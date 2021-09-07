@@ -1,0 +1,6 @@
+usr/include/e_dbus-1
+usr/include/e_dbus-1/connman0_7x
+usr/lib/*/pkgconfig/*.pc
+usr/lib/*/lib*.so.*
+usr/lib/*/*.la
+usr/lib/*/*.so

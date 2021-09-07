@@ -1,0 +1,3 @@
+libedbus1-dev: non-empty-dependency_libs-in-la-file
+libedbus1-dev: non-dev-pkg-with-shlib-symlink
+libedbus1-dev: package-name-doesnt-match-sonames

@@ -1,0 +1,35 @@
+Source: libedbus1
+Section: video
+Priority: optional
+Maintainer: Robert Wiley <ylee@bodhilinux.com>
+Build-Depends: debhelper (>=9), autotools-dev, automake, build-essential, libdbus-1-dev, libefl-dev, subversion
+Standards-Version: 4.5.0
+Homepage: http://enlightenment.org
+Rules-Requires-Root: no
+
+Package: libedbus1
+Architecture: any
+Depends: ${misc:Depends}, libc6 (>=2.21), libdbus-1-3, libefl
+Description: D-Bus and HAL wrapper libraries for use with EFL
+ This package contains:
+  - libedbus0 and libehal0 : D-Bus and HAL-related wrappers to ease integrating
+    D-Bus and HAL with EFL-based applications
+  - libenotify0 : provides an EFL-based notification support
+
+Package: libedbus-dev
+Architecture: any
+Depends: ${misc:Depends}, libc6 (>=2.21), libedbus1 (=${binary:Version})
+Description: D-Bus and HAL wrapper libraries for use with the EFL - Development files
+ Wrappers around D-Bus to ease integrating D-Bus with EFL based applications.
+ .
+ This package contains headers and static libraries for libedbus, libehal and
+ libenotify
+
+Package: libedbus-dbg
+Architecture: any
+Depends: libedbus1 (=${binary:Version})
+Description: D-Bus and HAL wrapper libraries for use with EFL
+ This package contains:
+  - libedbus0 and libehal0 : D-Bus and HAL-related wrappers to ease integrating
+    D-Bus and HAL with EFL-based applications
+  - libenotify0 : provides an EFL-based notification support
