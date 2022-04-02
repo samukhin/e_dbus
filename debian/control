@@ -2,14 +2,14 @@ Source: libedbus1
 Section: video
 Priority: optional
 Maintainer: Robert Wiley <ylee@bodhilinux.com>
-Build-Depends: debhelper (>=9), autotools-dev, automake, build-essential, libdbus-1-dev, libefl-dev, subversion
+Build-Depends: debhelper (>=9), autotools-dev, automake, build-essential, libdbus-1-dev, libefl-all-dev, subversion
 Standards-Version: 4.5.0
 Homepage: http://enlightenment.org
 Rules-Requires-Root: no
 
 Package: libedbus1
 Architecture: any
-Depends: ${misc:Depends}, libc6 (>=2.21), libdbus-1-3, libefl
+Depends: ${misc:Depends}, libc6 (>=2.21), libdbus-1-3, libefl-all-dev
 Description: D-Bus and HAL wrapper libraries for use with EFL
  This package contains:
   - libedbus0 and libehal0 : D-Bus and HAL-related wrappers to ease integrating
